@@ -80,7 +80,7 @@ public function indexAction()
   To check if the app configured correctly `var_dump(message);` in `view/questioner/question/index.phtml` and add question route to your url `http://0.0.0.0:8080/question`. <br>
   if it doesn't show the message, look in the `module.config.php` in module/Questioner/config if it is configured correctly. You can also ask me if you want.
 
-- Then create `Question.php` class in Model with `question, first_choice second_choice` and `third_choice` parameters.
+- Then create `Question.php` class in Model with `question, first_choice second_choice`, `third_choice` and `correct_answer` parameters.
 - Create `QuestionForm.php` class in Form and extend it to `Form` module from Laminas\Form. see more [how to create Form](https://docs.laminas.dev/tutorials/getting-started/forms-and-actions/), but first install it if you don't install it during installation to the project with `composer require laminas/laminas-form` command in the terminal. The form will have different inputs corresponding to Question object parameters.
 - Add new method in the QuestionController that return a QuestionForm instance to its corresponding file in the view, this is to create the question from the user side. 
 
