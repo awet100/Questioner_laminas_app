@@ -44,7 +44,7 @@ interfaces. You can then visit the site at http://localhost:8080/
 > You can refer to this [Laminas Tutorial](https://docs.laminas.dev/tutorials/getting-started/skeleton-application/). Every thing is described in there. I will point out some points below regarding our app.
 
 ### Step 1 :-
-- Create `Questioner` directory in the module, this is where our app will be created. And then its subdirectories `config, src` and `view`.
+- Create `Questioner` directory in the module, this is where our app will be created. And then create its subdirectories `config, src` and `view`.
 - In `src` create `Controller, Form` and `Model` directories and a `Module.php` class and implement `ConfigProviderInterface` to the Module.php class.
 - In the `config` will create `module.config.php` to configure the `routing` and `view manager` and `connection b/n routes and its respective Actions and Controller`. see [how config file looks like](https://docs.laminas.dev/tutorials/getting-started/routing-and-controllers/) 
 - Don't forget to include the config/module.config.php file into `Module.php` class.
